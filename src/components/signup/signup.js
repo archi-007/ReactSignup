@@ -48,10 +48,10 @@ class Signup extends Component
                 // get the token from backend
                 const token= res.data.token;
                 localStorage.setItem('token',token);
-                // redirect to homepage
-                return <Redirect to='/' />
-            }).catch(err=>{
-                this.setState({...this.setState,err:err})
+                // redirect to thank you page
+                return <Redirect to='/thankyou/' />
+            }).catch((error)=>{
+                this.setState({...this.state,err:error})
             })
         }
     }
@@ -241,16 +241,16 @@ class Signup extends Component
                     {this.state.err? 
                         <div className="text-danger">{this.state.err}</div>
                         :null}
-                    <div style={{display:"grid", justifyContent:"ceter", textAlign:"center"}}>
-                        <input style={{margin:"10px"}} placeholder="Full Name" type="text" name="name" id="name" onChange={this.handleChange}/>
-                        <input style={{margin:"10px"}} placeholder="Email" type="email" name="email" id="email" onChange={this.handleChange}/>
-                        <input style={{margin:"10px"}} placeholder="Phone" type="tel" name="phone" id="phone" onChange={this.handleChange}/>
-                        <input style={{margin:"10px"}} placeholder="Password" type="password" name="password" id="password" onChange={this.validatePassword}/>
+                    <div style={{display:"grid", justifyContent:"center", textAlign:"center"}}>
+                        <input style={{margin:"10px"}} placeholder="Full Name" type="text" name="name" id="name" onChange={this.handleChange} required />
+                        <input style={{margin:"10px"}} placeholder="Email" type="email" name="email" id="email" onChange={this.handleChange} required/>
+                        <input style={{margin:"10px"}} placeholder="Phone" type="tel" name="phone" id="phone" onChange={this.handleChange} required/>
+                        <input style={{margin:"10px"}} placeholder="Password" type="password" name="password" id="password" onChange={this.validatePassword} required/>
                         {this.state.passValidation!=='Validated'? 
                         <small className="text-danger">{this.state.passValidation}</small>
                         :null}
                         <div style={{display:"flex", margin:"10px"}}>
-                            <input onClick={this.handleClick} type="checkbox" id="TandC" name="TandC"/>
+                            <input onClick={this.handleClick} type="checkbox" id="TandC" name="TandC" required/>
                             <label htmlFor="TandC"> I accept the terms & privacy policy.</label>
                         </div>    
                     </div>
