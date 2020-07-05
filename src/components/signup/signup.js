@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Redirect} from 'react-router-dom';
 import axios from 'axios';
+import './signup.css'
 class Signup extends Component
 {
     state={
@@ -234,7 +235,7 @@ class Signup extends Component
                     </g>
                     </svg>
                 </div>
-                <div className="col-md-6 col-sm-8 mid" style={{justifyContent:"center", textAlign:"center"}}>
+                <div className="col-md-6 col-sm-8 mid form-container">
                     <h1 id="welcome">Welcome!</h1>
                     <h4>Create an account to submit your profile to various companies and explore opportunities of your interest</h4>
                     <form className="col align-self-center" onSubmit={this.handleSubmit}>
@@ -242,10 +243,18 @@ class Signup extends Component
                         <div className="text-danger">{this.state.err}</div>
                         :null}
                     <div style={{display:"grid", justifyContent:"center", textAlign:"center"}}>
-                        <input style={{margin:"10px"}} placeholder="Full Name" type="text" name="name" id="name" onChange={this.handleChange} required />
-                        <input style={{margin:"10px"}} placeholder="Email" type="email" name="email" id="email" onChange={this.handleChange} required/>
-                        <input style={{margin:"10px"}} placeholder="Phone" type="tel" name="phone" id="phone" onChange={this.handleChange} required/>
-                        <input style={{margin:"10px"}} placeholder="Password" type="password" name="password" id="password" onChange={this.validatePassword} required/>
+                        <div className="form-row">
+                            <input placeholder="Full Name" type="text" name="name" id="name" onChange={this.handleChange} required />
+                        </div>
+                        <div className="form-row">
+                            <input placeholder="Email" type="email" name="email" id="email" onChange={this.handleChange} required/>
+                        </div>
+                        <div className="form-row">
+                            <input placeholder="Phone" type="tel" name="phone" id="phone" onChange={this.handleChange} required/>
+                        </div>
+                        <div className="form-row">
+                            <input placeholder="Password" type="password" name="password" id="password" onChange={this.validatePassword} required/>
+                        </div>
                         {this.state.passValidation!=='Validated'? 
                         <small className="text-danger">{this.state.passValidation}</small>
                         :null}

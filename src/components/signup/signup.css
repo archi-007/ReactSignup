@@ -1,0 +1,90 @@
+html {
+    scroll-behavior: smooth !important;
+  }
+
+  body {
+  /* background-color: rgb(242, 252, 255) !important; */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Arimo", sans-serif !important;
+  margin-left: 2%;
+}
+
+input{
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border:none;
+    border: lightgrey 2px solid;
+    border-radius: 5px;
+}
+
+.illus4{
+    overflow: hidden;
+    position: relative;
+}
+.illus{
+    z-index: 0;
+}
+.illus2{
+    margin-top:-120px;
+}
+.illus3{
+    z-index: 0;
+}
+
+form{
+    margin: 10px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-container{
+    justify-content:center;
+    text-align : center;
+    z-index: 1;
+}
+
+.form-row{
+    margin: 10px;
+}
+
+input[type="text"],input[type="email"],input[type="password"],input[type="tel"]{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 992px) {
+    body 
+    {
+      overflow-x: hidden;
+    }
+    .illus2{
+        display: none;
+    }
+}
+  
+@media only screen and (max-width: 768px) {
+
+    body 
+    {
+      overflow-x: hidden;
+    }
+    .illus3 {
+        margin-bottom: -100px ;
+    }
+    .illus{
+        margin-bottom: -300px;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    .illus4{
+        display: none;
+    }
+}
