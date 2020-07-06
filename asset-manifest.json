@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ReactSignup/static/css/main.7c7ccd83.chunk.css",
+    "main.js": "/ReactSignup/static/js/main.8b2cc7a1.chunk.js",
+    "main.js.map": "/ReactSignup/static/js/main.8b2cc7a1.chunk.js.map",
+    "runtime-main.js": "/ReactSignup/static/js/runtime-main.4f1004c5.js",
+    "runtime-main.js.map": "/ReactSignup/static/js/runtime-main.4f1004c5.js.map",
+    "static/js/2.4f700dfc.chunk.js": "/ReactSignup/static/js/2.4f700dfc.chunk.js",
+    "static/js/2.4f700dfc.chunk.js.map": "/ReactSignup/static/js/2.4f700dfc.chunk.js.map",
+    "index.html": "/ReactSignup/index.html",
+    "precache-manifest.cca4ee1dafe81455a1dcb700ecc779b6.js": "/ReactSignup/precache-manifest.cca4ee1dafe81455a1dcb700ecc779b6.js",
+    "service-worker.js": "/ReactSignup/service-worker.js",
+    "static/css/main.7c7ccd83.chunk.css.map": "/ReactSignup/static/css/main.7c7ccd83.chunk.css.map",
+    "static/js/2.4f700dfc.chunk.js.LICENSE.txt": "/ReactSignup/static/js/2.4f700dfc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f1004c5.js",
+    "static/js/2.4f700dfc.chunk.js",
+    "static/css/main.7c7ccd83.chunk.css",
+    "static/js/main.8b2cc7a1.chunk.js"
+  ]
+}
