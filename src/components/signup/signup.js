@@ -40,19 +40,16 @@ class Signup extends Component
         if(this.state.passValidation==='Validated')
         {
             // add registration api url
-            axios.post('...',{
-                name:this.state.name,
+            axios.post('http://localhost:8000/api/registration/',{
+                full_name:this.state.name,
                 email:this.state.email,
-                phone:this.state.phone,
+                phone_number:this.state.phone,
                 password:this.state.password,
             }).then((res)=>{
-                // get the token from backend
-                const token= res.data.token;
-                localStorage.setItem('token',token);
                 // redirect to thank you page
-                return <Redirect to='/thankyou/' />
+                // return <Redirect to='/thankyou/' />
             }).catch((error)=>{
-                this.setState({...this.state,err:error})
+                throw(error)
             })
         }
     }
