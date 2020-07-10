@@ -1,0 +1,73 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.card-container{
+    border-radius: 50px;
+    width:400px;
+    height:250px;
+    border-radius:30px;
+    background-color:#e6e6ff;
+    border: #e6e6ff;
+    padding:30px;
+    margin:10px;
+    margin-right:2px
+}
+.company-logo{
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.company-image
+{
+    margin: 0;
+}
+
+.stack{
+    max-width: 100px;
+    background-color: white;
+    margin: 2px;
+    padding: 3px;
+    border: lightgrey 2px solid;
+    border-radius: 10px;
+}
+
+#country-filter{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    background-color: #fff198;
+    border: #f7dc6f solid 2px;
+    border-radius: 10px;
+    width: 100%;
+    color: #bf360c ;
+    font-weight: bold;
+}
+.filters{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.search{
+    position: relative;
+    right: 10px;
+    top:30px;
+    color: #ef6c00;
+}
+
+.companies{
+    justify-content: left;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+form :hover{
+    cursor: pointer;
+}

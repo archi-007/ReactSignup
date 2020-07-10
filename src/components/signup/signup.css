@@ -3,7 +3,6 @@ html {
   }
 
   body {
-  /* background-color: rgb(242, 252, 255) !important; */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -11,7 +10,7 @@ html {
   margin-left: 2%;
 }
 
-input{
+.signup-input{
     margin: 10px;
     background-color: white;
     padding: 10px;
@@ -20,28 +19,28 @@ input{
     border-radius: 5px;
 }
 
-.illus4{
+.signup-illus4{
     overflow: hidden;
     position: relative;
 }
-.illus{
+.signup-illus{
     z-index: 0;
 }
-.illus2{
+.signup-illus2{
     margin-top:-120px;
 }
-.illus3{
+.signup-illus3{
     z-index: 0;
 }
 
-form{
+.signup-form{
     margin: 10px;
     margin-top: 20px;
     justify-content: center;
     text-align: center;
 }
 
-.form-container{
+.signup-form-container{
     justify-content:center;
     text-align : center;
     z-index: 1;
@@ -61,7 +60,7 @@ input[type="text"],input[type="email"],input[type="password"],input[type="tel"]{
     {
       overflow-x: hidden;
     }
-    .illus2{
+    .signup-illus2{
         display: none;
     }
 }
@@ -72,10 +71,10 @@ input[type="text"],input[type="email"],input[type="password"],input[type="tel"]{
     {
       overflow-x: hidden;
     }
-    .illus3 {
+    .signup-illus3 {
         margin-bottom: -100px ;
     }
-    .illus{
+    .signup-illus{
         margin-bottom: -300px;
     }
 }
@@ -84,7 +83,7 @@ input[type="text"],input[type="email"],input[type="password"],input[type="tel"]{
     body {
         overflow-x: hidden;
     }
-    .illus4{
+    .signup-illus4{
         display: none;
     }
 }

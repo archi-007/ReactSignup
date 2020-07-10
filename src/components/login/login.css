@@ -1,0 +1,138 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+
+body {
+  overflow-x: hidden !important;
+  font-family: "Arimo", sans-serif !important;
+  margin: 0;
+  padding: 0;
+  width: 96%;
+  margin-left: 2%;
+  justify-content: center;
+}
+
+
+.login-illus2 {
+  height: 600px;
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.login-h1 {
+  margin-top: 75px !important;
+  font-family: Roboto;
+}
+
+.login-mid {
+  margin-top: -500px;
+}
+
+.login-form-row span {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.login-mid h1 {
+  text-align: center;
+}
+
+.login-form {
+  margin-top: 15px;
+}
+
+.login-input {
+  margin-top: 10px !important;
+  /* margin-bottom: 5px !important; */
+}
+
+.form-row {
+  margin: auto !important;
+  /* border: 1px solid red; */
+}
+
+.login-form button {
+  background: linear-gradient(to right, #0066cc 0%, #66ffff 100%);
+  border: none !important;
+  /* padding: 10px 0px !important; */
+  color: #151515 !important;
+  width: 180px !important;
+  border-radius: 25px !important;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.login-form-row p {
+  padding-top: 20px !important;
+  margin: auto !important;
+}
+
+.button:focus,
+.button:active:focus,
+.button.active:focus,
+.button.focus,
+.button:active.focus,
+.button.active.focus {
+  outline: none !important;
+  outline: 0 !important;
+}
+
+/* .illus2 {
+    margin-left: 160px;
+    height: 300px;
+    width: 200px;
+} */
+
+@media screen and (max-width: 992px) {
+    .login-illus2{
+        display: none;
+    }
+    .login-illus1 {
+        display: block;
+        height: 50%;
+        width: 100%;
+        margin: auto !important;
+      }
+      .illus-1-container{
+        margin-bottom: -250px;
+      }
+  .login-mid {
+    margin-top: 20px !important;
+  }
+
+  .login-h1 {
+    font-size: 24px !important;
+    margin-top: 20px !important;
+  }
+
+  .login-p {
+    font-size: 16px !important;
+  }
+
+}
+
+.login-row{
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .login-illus1 {
+    display: block;
+    height: 50%;
+    width: 100%;
+    margin: auto !important;
+  }
+  .illus-1-container{
+    margin-bottom: -150px;
+  }
+
+  .login-mid {
+    margin-top: 0px !important;
+    /* border: 1px solid red; */
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}

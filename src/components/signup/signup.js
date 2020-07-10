@@ -47,8 +47,14 @@ class Signup extends Component
                 password:this.state.password,
             }).then((res)=>{
                 // redirect to thank you page
-                // return <Redirect to='/thankyou/' />
+                this.props.history.push('/thankyou')
             }).catch((error)=>{
+                // console.log(error)
+                if(error.message=='Request failed with status code 400')
+                {
+                    this.setState({...this.state,err:"This Email Id is taken. Try a different one."})
+                }
+                else
                 throw(error)
             })
         }
@@ -69,7 +75,7 @@ class Signup extends Component
             <div className="row">
                 <div className="col-md-3">
                     <svg
-                    className="illus3"
+                    className="signup-illus3"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     width="247.298"
@@ -141,7 +147,7 @@ class Signup extends Component
                     </g>
                     </svg>
                     <svg
-                    className="illus"
+                    className="signup-illus"
                     xmlns="http://www.w3.org/2000/svg"
                     width="160"
                     height="395"
@@ -232,31 +238,31 @@ class Signup extends Component
                     </g>
                     </svg>
                 </div>
-                <div className="col-md-6 col-sm-8 mid form-container">
+                <div className="col-md-6 col-sm-8 mid signup-form-container form-container">
                     <h1 id="welcome">Welcome!</h1>
                     <h4>Create an account to submit your profile to various companies and explore opportunities of your interest</h4>
-                    <form className="col align-self-center" onSubmit={this.handleSubmit}>
+                    <form className="col align-self-center signup-form" onSubmit={this.handleSubmit}>
                     {this.state.err? 
                         <div className="text-danger">{this.state.err}</div>
                         :null}
                     <div style={{display:"grid", justifyContent:"center", textAlign:"center"}}>
                         <div className="form-row">
-                            <input placeholder="Full Name" type="text" name="name" id="name" onChange={this.handleChange} required />
+                            <input className="signup-input" placeholder="Full Name" type="text" name="name" id="name" onChange={this.handleChange} required />
                         </div>
                         <div className="form-row">
-                            <input placeholder="Email" type="email" name="email" id="email" onChange={this.handleChange} required/>
+                            <input className="signup-input" placeholder="Email" type="email" name="email" id="email" onChange={this.handleChange} required/>
                         </div>
                         <div className="form-row">
-                            <input placeholder="Phone" type="tel" name="phone" id="phone" onChange={this.handleChange} required/>
+                            <input className="signup-input" placeholder="Phone" type="tel" name="phone" id="phone" onChange={this.handleChange} required/>
                         </div>
                         <div className="form-row">
-                            <input placeholder="Password" type="password" name="password" id="password" onChange={this.validatePassword} required/>
+                            <input className="signup-input" placeholder="Password" type="password" name="password" id="password" onChange={this.validatePassword} required/>
                         </div>
                         {this.state.passValidation!=='Validated'? 
                         <small className="text-danger">{this.state.passValidation}</small>
                         :null}
                         <div style={{display:"flex", margin:"10px"}}>
-                            <input onClick={this.handleClick} type="checkbox" id="TandC" name="TandC" required/>
+                            <input className="signup-input" onClick={this.handleClick} type="checkbox" id="TandC" name="TandC" required/>
                             <label htmlFor="TandC"> I accept the terms & privacy policy.</label>
                         </div>    
                     </div>
@@ -269,7 +275,7 @@ class Signup extends Component
                 </div>
                 <div className="col-md-3">
                     <svg
-                        className="illus2"
+                        className="signup-illus2"
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
                         width="100%"
@@ -569,7 +575,7 @@ class Signup extends Component
                 </div>
                 <div className="row">
                     <svg
-                    className="illus4"
+                    className="signup-illus4"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     width="100%"

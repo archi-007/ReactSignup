@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+
+body {
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+  font-family: "Arimo", sans-serif !important;
+  color: #151515;
+  /* width: 96%;
+  margin-left: 2%; */
+}
+
+.circle-1 {
+  height: 300px;
+  width: 300px;
+  background-color: #34a8eb;
+  border-radius: 50%;
+  z-index: 0;
+  margin-left: -45px;
+  margin-top: -45px;
+}
+
+.circle-2 {
+  height: 40px;
+  width: 40px;
+  background-color: #34a8eb;
+  border-radius: 50%;
+  z-index: 0;
+  margin: 0;
+  position: fixed;
+  /* float: right !important; */
+  margin-left: 350px !important;
+}
+
+.circle-3 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(74, 255, 225);
+  border-radius: 50%;
+  z-index: -1;
+  margin-left: -20px;
+  margin-top: -275px;
+}
+
+.card1 {
+  padding: 30px;
+  padding-top: 0;
+  width: 80%;
+  background-color: white;
+  margin: auto !important;
+  margin-top: 70px !important;
+  /* margin-left: 10%; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 999;
+  text-align: center;
+  position: relative;
+}
+
+.line {
+  border: 2px solid rgb(21, 155, 245);
+  width: 10%;
+  margin-left: 45%;
+  border-radius: 10px !important;
+}
+
+.card-content h3 {
+  /* margin-top: 20px; */
+  text-align: center;
+  /* letter-spacing: 3px; */
+  /* border: 1px solid red !important; */
+}
+
+.card-content p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto !important;
+  /* margin-top: 40px; */
+  /* letter-spacing: 2px; */
+  /* font-weight: bold; */
+}
+
+.card-content svg {
+  height: 150px;
+}
+
+.circle-4 {
+  height: 55px;
+  width: 55px;
+  background-color: #34a8eb;
+  border-radius: 50%;
+  z-index: 0;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.square {
+  height: 190px;
+  width: 160px;
+  background: rgb(230, 251, 255);
+  background: linear-gradient(
+    9deg,
+    rgba(230, 251, 255, 1) 0%,
+    rgba(110, 226, 250, 1) 100%
+  );
+  z-index: -2 !important;
+  float: right;
+  margin-right: 85px;
+  margin-top: -165px;
+  opacity: 0.9;
+}
+
+.circle-5 {
+  height: 200px;
+  width: 200px;
+  background-color: #34a8eb;
+  border-radius: 50%;
+  z-index: -1;
+  /* margin-top: 30px;
+  margin-left: 60px; */
+  position: fixed;
+  margin-left: 1360px;
+  margin-top: -60px;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: white !important;
+  }
+
+  p {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card1 {
+    margin-top: -50px !important;
+  }
+
+  p {
+    font-size: 16px !important;
+  }
+
+  .circle-2 {
+    margin: 0;
+    margin-top: -260px;
+    margin-right: -10px;
+  }
+
+  .circle-4 {
+    margin: 0;
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+
+  .square {
+    height: 80px;
+    width: 70px;
+    margin-right: 20px;
+    margin-top: -80px;
+  }
+
+  .circle-5 {
+    display: none;
+  }
+
+  .card-content svg {
+    /* height: 150px; */
+    width: 200px;
+  }
+}
